@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		452B7D592008BDBE0088F985 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452B7D572008BDBE0088F985 /* WebViewController.m */; };
+		452B7D5A2008BDBE0088F985 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 452B7D582008BDBE0088F985 /* WebViewController.xib */; };
+		457DC187202408C800A74499 /* loadings.gif in Resources */ = {isa = PBXBuildFile; fileRef = 457DC185202408C700A74499 /* loadings.gif */; };
+		457DC188202408C800A74499 /* no_wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 457DC186202408C800A74499 /* no_wifi.png */; };
+		457DC18E2024398D00A74499 /* LLGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 457DC18C2024398D00A74499 /* LLGifView.m */; };
+		457DC18F2024398D00A74499 /* LLGifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 457DC18D2024398D00A74499 /* LLGifImageView.m */; };
+		4580E0762015DB64008CE129 /* button-text.png in Resources */ = {isa = PBXBuildFile; fileRef = 4580E06D2015DB64008CE129 /* button-text.png */; };
+		4580E0772015DB64008CE129 /* button-chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4580E06E2015DB64008CE129 /* button-chat@2x.png */; };
+		4580E0782015DB64008CE129 /* button-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 4580E06F2015DB64008CE129 /* button-chat.png */; };
+		4580E0792015DB64008CE129 /* button-chat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4580E0702015DB64008CE129 /* button-chat@3x.png */; };
+		4580E07A2015DB64008CE129 /* button-video.png in Resources */ = {isa = PBXBuildFile; fileRef = 4580E0712015DB64008CE129 /* button-video.png */; };
+		4580E07B2015DB64008CE129 /* button-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4580E0722015DB64008CE129 /* button-photo.png */; };
+		4580E07C2015DB64008CE129 /* button-quote.png in Resources */ = {isa = PBXBuildFile; fileRef = 4580E0732015DB64008CE129 /* button-quote.png */; };
+		4580E07D2015DB64008CE129 /* button-link.png in Resources */ = {isa = PBXBuildFile; fileRef = 4580E0742015DB64008CE129 /* button-link.png */; };
+		4580E07E2015DB64008CE129 /* XWMenuPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580E0752015DB64008CE129 /* XWMenuPopView.m */; };
+		4580E0882016E17F008CE129 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4580E0872016E17F008CE129 /* UMCommon.framework */; };
+		4580E08B2016E1B5008CE129 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4580E08A2016E1B5008CE129 /* CoreTelephony.framework */; };
+		4580E08D2016E1CB008CE129 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4580E08C2016E1CB008CE129 /* libz.tbd */; };
+		4580E08F2016E1DE008CE129 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4580E08E2016E1DE008CE129 /* libsqlite3.tbd */; };
+		4580E0912016E377008CE129 /* UMAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4580E0902016E376008CE129 /* UMAnalytics.framework */; };
+		4580E0952016E6CD008CE129 /* UMPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4580E0942016E6CC008CE129 /* UMPush.framework */; };
+		4580E0972016E6EB008CE129 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4580E0962016E6EB008CE129 /* UserNotifications.framework */; };
+		45B447362016F9EE0028513A /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 45B447262016F9EE0028513A /* UMSocialSDKResources.bundle */; };
+		45B447372016F9EE0028513A /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B447272016F9EE0028513A /* UShareUI.framework */; };
+		45B447382016F9EE0028513A /* UMShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B447282016F9EE0028513A /* UMShare.framework */; };
+		45B447392016F9EE0028513A /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B4472B2016F9EE0028513A /* libSocialWeChat.a */; };
+		45B4473A2016F9EE0028513A /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B4472E2016F9EE0028513A /* libSocialSina.a */; };
+		45B4473B2016F9EE0028513A /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B447322016F9EE0028513A /* libSocialQQ.a */; };
+		45B4473C2016F9EE0028513A /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 45B447342016F9EE0028513A /* UMSocialSDKPromptResources.bundle */; };
+		45B4473D2016F9EE0028513A /* libUMSocialLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B447352016F9EE0028513A /* libUMSocialLog.a */; };
+		45FE73B0200899B3008B5000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE73AF200899B3008B5000 /* AppDelegate.m */; };
+		45FE73B3200899B3008B5000 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE73B2200899B3008B5000 /* ViewController.m */; };
+		45FE73B8200899B3008B5000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FE73B7200899B3008B5000 /* Assets.xcassets */; };
+		45FE73BE200899B3008B5000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE73BD200899B3008B5000 /* main.m */; };
+		45FE73C8200899B3008B5000 /* newBeautyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE73C7200899B3008B5000 /* newBeautyTests.m */; };
+		45FE73D3200899B4008B5000 /* newBeautyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE73D2200899B4008B5000 /* newBeautyUITests.m */; };
+		45FE73E12008A983008B5000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FE73E02008A983008B5000 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45FE73C4200899B3008B5000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FE73A3200899B3008B5000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45FE73AA200899B3008B5000;
+			remoteInfo = newBeauty;
+		};
+		45FE73CF200899B4008B5000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FE73A3200899B3008B5000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45FE73AA200899B3008B5000;
+			remoteInfo = newBeauty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		452B7D562008BDBE0088F985 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		452B7D572008BDBE0088F985 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		452B7D582008BDBE0088F985 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		45712044202BF89400DEE6A9 /* newBeauty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = newBeauty.entitlements; sourceTree = "<group>"; };
+		457DC185202408C700A74499 /* loadings.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loadings.gif; sourceTree = "<group>"; };
+		457DC186202408C800A74499 /* no_wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_wifi.png; sourceTree = "<group>"; };
+		457DC18A2024398D00A74499 /* LLGifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLGifView.h; sourceTree = "<group>"; };
+		457DC18B2024398D00A74499 /* LLGifImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLGifImageView.h; sourceTree = "<group>"; };
+		457DC18C2024398D00A74499 /* LLGifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLGifView.m; sourceTree = "<group>"; };
+		457DC18D2024398D00A74499 /* LLGifImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLGifImageView.m; sourceTree = "<group>"; };
+		4580E06B2015DB64008CE129 /* XWMenuPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWMenuPopView.h; sourceTree = "<group>"; };
+		4580E06D2015DB64008CE129 /* button-text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-text.png"; sourceTree = "<group>"; };
+		4580E06E2015DB64008CE129 /* button-chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-chat@2x.png"; sourceTree = "<group>"; };
+		4580E06F2015DB64008CE129 /* button-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-chat.png"; sourceTree = "<group>"; };
+		4580E0702015DB64008CE129 /* button-chat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-chat@3x.png"; sourceTree = "<group>"; };
+		4580E0712015DB64008CE129 /* button-video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-video.png"; sourceTree = "<group>"; };
+		4580E0722015DB64008CE129 /* button-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-photo.png"; sourceTree = "<group>"; };
+		4580E0732015DB64008CE129 /* button-quote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-quote.png"; sourceTree = "<group>"; };
+		4580E0742015DB64008CE129 /* button-link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-link.png"; sourceTree = "<group>"; };
+		4580E0752015DB64008CE129 /* XWMenuPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWMenuPopView.m; sourceTree = "<group>"; };
+		4580E0872016E17F008CE129 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		4580E08A2016E1B5008CE129 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4580E08C2016E1CB008CE129 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4580E08E2016E1DE008CE129 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4580E0902016E376008CE129 /* UMAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMAnalytics.framework; sourceTree = "<group>"; };
+		4580E0942016E6CC008CE129 /* UMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMPush.framework; sourceTree = "<group>"; };
+		4580E0962016E6EB008CE129 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		45B447262016F9EE0028513A /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		45B447272016F9EE0028513A /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
+		45B447282016F9EE0028513A /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMShare.framework; sourceTree = "<group>"; };
+		45B4472B2016F9EE0028513A /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		45B4472C2016F9EE0028513A /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		45B4472E2016F9EE0028513A /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
+		45B4472F2016F9EE0028513A /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		45B447312016F9EE0028513A /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		45B447322016F9EE0028513A /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		45B447342016F9EE0028513A /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
+		45B447352016F9EE0028513A /* libUMSocialLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocialLog.a; sourceTree = "<group>"; };
+		45FE73AB200899B3008B5000 /* newBeauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newBeauty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FE73AE200899B3008B5000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45FE73AF200899B3008B5000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45FE73B1200899B3008B5000 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		45FE73B2200899B3008B5000 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		45FE73B7200899B3008B5000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45FE73BC200899B3008B5000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45FE73BD200899B3008B5000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45FE73C3200899B3008B5000 /* newBeautyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newBeautyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FE73C7200899B3008B5000 /* newBeautyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newBeautyTests.m; sourceTree = "<group>"; };
+		45FE73C9200899B4008B5000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45FE73CE200899B4008B5000 /* newBeautyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newBeautyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FE73D2200899B4008B5000 /* newBeautyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newBeautyUITests.m; sourceTree = "<group>"; };
+		45FE73D4200899B4008B5000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45FE73E02008A983008B5000 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45FE73A8200899B3008B5000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B4473B2016F9EE0028513A /* libSocialQQ.a in Frameworks */,
+				4580E0972016E6EB008CE129 /* UserNotifications.framework in Frameworks */,
+				45B447382016F9EE0028513A /* UMShare.framework in Frameworks */,
+				4580E08F2016E1DE008CE129 /* libsqlite3.tbd in Frameworks */,
+				4580E08D2016E1CB008CE129 /* libz.tbd in Frameworks */,
+				4580E0952016E6CD008CE129 /* UMPush.framework in Frameworks */,
+				45B447372016F9EE0028513A /* UShareUI.framework in Frameworks */,
+				45B447392016F9EE0028513A /* libSocialWeChat.a in Frameworks */,
+				45B4473A2016F9EE0028513A /* libSocialSina.a in Frameworks */,
+				4580E08B2016E1B5008CE129 /* CoreTelephony.framework in Frameworks */,
+				45B4473D2016F9EE0028513A /* libUMSocialLog.a in Frameworks */,
+				4580E0912016E377008CE129 /* UMAnalytics.framework in Frameworks */,
+				4580E0882016E17F008CE129 /* UMCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FE73C0200899B3008B5000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FE73CB200899B4008B5000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		457DC1842024087B00A74499 /* pic */ = {
+			isa = PBXGroup;
+			children = (
+				457DC185202408C700A74499 /* loadings.gif */,
+				457DC186202408C800A74499 /* no_wifi.png */,
+			);
+			path = pic;
+			sourceTree = "<group>";
+		};
+		457DC1892024398D00A74499 /* LLGifView */ = {
+			isa = PBXGroup;
+			children = (
+				457DC18A2024398D00A74499 /* LLGifView.h */,
+				457DC18B2024398D00A74499 /* LLGifImageView.h */,
+				457DC18C2024398D00A74499 /* LLGifView.m */,
+				457DC18D2024398D00A74499 /* LLGifImageView.m */,
+			);
+			path = LLGifView;
+			sourceTree = "<group>";
+		};
+		4580E06A2015DB64008CE129 /* XWMenuPopView */ = {
+			isa = PBXGroup;
+			children = (
+				4580E06B2015DB64008CE129 /* XWMenuPopView.h */,
+				4580E06C2015DB64008CE129 /* image */,
+				4580E0752015DB64008CE129 /* XWMenuPopView.m */,
+			);
+			name = XWMenuPopView;
+			path = "../../../../../Downloads/XWMenuPopView-master/XWMenuPopViewDemo/XWMenuPopViewDemo/XWMenuPopView";
+			sourceTree = "<group>";
+		};
+		4580E06C2015DB64008CE129 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				4580E06D2015DB64008CE129 /* button-text.png */,
+				4580E06E2015DB64008CE129 /* button-chat@2x.png */,
+				4580E06F2015DB64008CE129 /* button-chat.png */,
+				4580E0702015DB64008CE129 /* button-chat@3x.png */,
+				4580E0712015DB64008CE129 /* button-video.png */,
+				4580E0722015DB64008CE129 /* button-photo.png */,
+				4580E0732015DB64008CE129 /* button-quote.png */,
+				4580E0742015DB64008CE129 /* button-link.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		4580E0892016E1B5008CE129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4580E0962016E6EB008CE129 /* UserNotifications.framework */,
+				4580E08E2016E1DE008CE129 /* libsqlite3.tbd */,
+				4580E08C2016E1CB008CE129 /* libz.tbd */,
+				4580E08A2016E1B5008CE129 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45B447242016F9EE0028513A /* share */ = {
+			isa = PBXGroup;
+			children = (
+				45B447252016F9EE0028513A /* UMSocialUI */,
+				45B447282016F9EE0028513A /* UMShare.framework */,
+				45B447292016F9EE0028513A /* SocialLibraries */,
+				45B447332016F9EE0028513A /* UMSocialSDKPlugin */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		45B447252016F9EE0028513A /* UMSocialUI */ = {
+			isa = PBXGroup;
+			children = (
+				45B447262016F9EE0028513A /* UMSocialSDKResources.bundle */,
+				45B447272016F9EE0028513A /* UShareUI.framework */,
+			);
+			path = UMSocialUI;
+			sourceTree = "<group>";
+		};
+		45B447292016F9EE0028513A /* SocialLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				45B4472A2016F9EE0028513A /* WeChat */,
+				45B4472D2016F9EE0028513A /* Sina */,
+				45B447302016F9EE0028513A /* QQ */,
+			);
+			path = SocialLibraries;
+			sourceTree = "<group>";
+		};
+		45B4472A2016F9EE0028513A /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				45B4472B2016F9EE0028513A /* libSocialWeChat.a */,
+				45B4472C2016F9EE0028513A /* UMSocialWechatHandler.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		45B4472D2016F9EE0028513A /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+				45B4472E2016F9EE0028513A /* libSocialSina.a */,
+				45B4472F2016F9EE0028513A /* UMSocialSinaHandler.h */,
+			);
+			path = Sina;
+			sourceTree = "<group>";
+		};
+		45B447302016F9EE0028513A /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				45B447312016F9EE0028513A /* UMSocialQQHandler.h */,
+				45B447322016F9EE0028513A /* libSocialQQ.a */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		45B447332016F9EE0028513A /* UMSocialSDKPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				45B447342016F9EE0028513A /* UMSocialSDKPromptResources.bundle */,
+				45B447352016F9EE0028513A /* libUMSocialLog.a */,
+			);
+			path = UMSocialSDKPlugin;
+			sourceTree = "<group>";
+		};
+		45FE73A2200899B3008B5000 = {
+			isa = PBXGroup;
+			children = (
+				45B447242016F9EE0028513A /* share */,
+				4580E0942016E6CC008CE129 /* UMPush.framework */,
+				4580E0902016E376008CE129 /* UMAnalytics.framework */,
+				4580E0872016E17F008CE129 /* UMCommon.framework */,
+				45FE73AD200899B3008B5000 /* newBeauty */,
+				45FE73C6200899B3008B5000 /* newBeautyTests */,
+				45FE73D1200899B4008B5000 /* newBeautyUITests */,
+				45FE73AC200899B3008B5000 /* Products */,
+				4580E0892016E1B5008CE129 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45FE73AC200899B3008B5000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45FE73AB200899B3008B5000 /* newBeauty.app */,
+				45FE73C3200899B3008B5000 /* newBeautyTests.xctest */,
+				45FE73CE200899B4008B5000 /* newBeautyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45FE73AD200899B3008B5000 /* newBeauty */ = {
+			isa = PBXGroup;
+			children = (
+				45712044202BF89400DEE6A9 /* newBeauty.entitlements */,
+				457DC1842024087B00A74499 /* pic */,
+				4580E06A2015DB64008CE129 /* XWMenuPopView */,
+				45FE73AE200899B3008B5000 /* AppDelegate.h */,
+				457DC1892024398D00A74499 /* LLGifView */,
+				45FE73AF200899B3008B5000 /* AppDelegate.m */,
+				45FE73B1200899B3008B5000 /* ViewController.h */,
+				45FE73B2200899B3008B5000 /* ViewController.m */,
+				45FE73B7200899B3008B5000 /* Assets.xcassets */,
+				45FE73BC200899B3008B5000 /* Info.plist */,
+				45FE73BD200899B3008B5000 /* main.m */,
+				45FE73E02008A983008B5000 /* Images.xcassets */,
+				452B7D562008BDBE0088F985 /* WebViewController.h */,
+				452B7D572008BDBE0088F985 /* WebViewController.m */,
+				452B7D582008BDBE0088F985 /* WebViewController.xib */,
+			);
+			path = newBeauty;
+			sourceTree = "<group>";
+		};
+		45FE73C6200899B3008B5000 /* newBeautyTests */ = {
+			isa = PBXGroup;
+			children = (
+				45FE73C7200899B3008B5000 /* newBeautyTests.m */,
+				45FE73C9200899B4008B5000 /* Info.plist */,
+			);
+			path = newBeautyTests;
+			sourceTree = "<group>";
+		};
+		45FE73D1200899B4008B5000 /* newBeautyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				45FE73D2200899B4008B5000 /* newBeautyUITests.m */,
+				45FE73D4200899B4008B5000 /* Info.plist */,
+			);
+			path = newBeautyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45FE73AA200899B3008B5000 /* newBeauty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FE73D7200899B4008B5000 /* Build configuration list for PBXNativeTarget "newBeauty" */;
+			buildPhases = (
+				45FE73A7200899B3008B5000 /* Sources */,
+				45FE73A8200899B3008B5000 /* Frameworks */,
+				45FE73A9200899B3008B5000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = newBeauty;
+			productName = newBeauty;
+			productReference = 45FE73AB200899B3008B5000 /* newBeauty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45FE73C2200899B3008B5000 /* newBeautyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FE73DA200899B4008B5000 /* Build configuration list for PBXNativeTarget "newBeautyTests" */;
+			buildPhases = (
+				45FE73BF200899B3008B5000 /* Sources */,
+				45FE73C0200899B3008B5000 /* Frameworks */,
+				45FE73C1200899B3008B5000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45FE73C5200899B3008B5000 /* PBXTargetDependency */,
+			);
+			name = newBeautyTests;
+			productName = newBeautyTests;
+			productReference = 45FE73C3200899B3008B5000 /* newBeautyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45FE73CD200899B4008B5000 /* newBeautyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FE73DD200899B4008B5000 /* Build configuration list for PBXNativeTarget "newBeautyUITests" */;
+			buildPhases = (
+				45FE73CA200899B4008B5000 /* Sources */,
+				45FE73CB200899B4008B5000 /* Frameworks */,
+				45FE73CC200899B4008B5000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45FE73D0200899B4008B5000 /* PBXTargetDependency */,
+			);
+			name = newBeautyUITests;
+			productName = newBeautyUITests;
+			productReference = 45FE73CE200899B4008B5000 /* newBeautyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45FE73A3200899B3008B5000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = com.xinfeng;
+				TargetAttributes = {
+					45FE73AA200899B3008B5000 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					45FE73C2200899B3008B5000 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45FE73AA200899B3008B5000;
+					};
+					45FE73CD200899B4008B5000 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45FE73AA200899B3008B5000;
+					};
+				};
+			};
+			buildConfigurationList = 45FE73A6200899B3008B5000 /* Build configuration list for PBXProject "newBeauty" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45FE73A2200899B3008B5000;
+			productRefGroup = 45FE73AC200899B3008B5000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45FE73AA200899B3008B5000 /* newBeauty */,
+				45FE73C2200899B3008B5000 /* newBeautyTests */,
+				45FE73CD200899B4008B5000 /* newBeautyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45FE73A9200899B3008B5000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4580E0772015DB64008CE129 /* button-chat@2x.png in Resources */,
+				4580E07A2015DB64008CE129 /* button-video.png in Resources */,
+				4580E07B2015DB64008CE129 /* button-photo.png in Resources */,
+				4580E07C2015DB64008CE129 /* button-quote.png in Resources */,
+				4580E0792015DB64008CE129 /* button-chat@3x.png in Resources */,
+				457DC187202408C800A74499 /* loadings.gif in Resources */,
+				45B447362016F9EE0028513A /* UMSocialSDKResources.bundle in Resources */,
+				457DC188202408C800A74499 /* no_wifi.png in Resources */,
+				4580E07D2015DB64008CE129 /* button-link.png in Resources */,
+				452B7D5A2008BDBE0088F985 /* WebViewController.xib in Resources */,
+				45B4473C2016F9EE0028513A /* UMSocialSDKPromptResources.bundle in Resources */,
+				45FE73E12008A983008B5000 /* Images.xcassets in Resources */,
+				45FE73B8200899B3008B5000 /* Assets.xcassets in Resources */,
+				4580E0782015DB64008CE129 /* button-chat.png in Resources */,
+				4580E0762015DB64008CE129 /* button-text.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FE73C1200899B3008B5000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FE73CC200899B4008B5000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45FE73A7200899B3008B5000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FE73B3200899B3008B5000 /* ViewController.m in Sources */,
+				45FE73BE200899B3008B5000 /* main.m in Sources */,
+				457DC18F2024398D00A74499 /* LLGifImageView.m in Sources */,
+				4580E07E2015DB64008CE129 /* XWMenuPopView.m in Sources */,
+				457DC18E2024398D00A74499 /* LLGifView.m in Sources */,
+				45FE73B0200899B3008B5000 /* AppDelegate.m in Sources */,
+				452B7D592008BDBE0088F985 /* WebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FE73BF200899B3008B5000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FE73C8200899B3008B5000 /* newBeautyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FE73CA200899B4008B5000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FE73D3200899B4008B5000 /* newBeautyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45FE73C5200899B3008B5000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45FE73AA200899B3008B5000 /* newBeauty */;
+			targetProxy = 45FE73C4200899B3008B5000 /* PBXContainerItemProxy */;
+		};
+		45FE73D0200899B4008B5000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45FE73AA200899B3008B5000 /* newBeauty */;
+			targetProxy = 45FE73CF200899B4008B5000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		45FE73D5200899B4008B5000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		45FE73D6200899B4008B5000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45FE73D8200899B4008B5000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = newBeauty/newBeauty.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Qiang Li (S73F5HMS3B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/share/UMSocialUI",
+					"$(PROJECT_DIR)/share",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = newBeauty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/share/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/share/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/share/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/share/UMSocialSDKPlugin",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinfeng.newbeautyindustry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f2afa95a-53e7-48a2-b3a2-ff65030c46a6";
+				PROVISIONING_PROFILE_SPECIFIER = "newbeautyindustry-dev";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		45FE73D9200899B4008B5000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = newBeauty/newBeauty.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Qiang Li (294Q8452TK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/share/UMSocialUI",
+					"$(PROJECT_DIR)/share",
+				);
+				INFOPLIST_FILE = newBeauty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/share/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/share/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/share/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/share/UMSocialSDKPlugin",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinfeng.newbeautyindustry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "391a9f12-b406-494b-9ca4-e201e6af6d7a";
+				PROVISIONING_PROFILE_SPECIFIER = newbeautyindustry;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		45FE73DB200899B4008B5000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3U8L694PX;
+				INFOPLIST_FILE = newBeautyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinfeng.newBeautyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/newBeauty.app/newBeauty";
+			};
+			name = Debug;
+		};
+		45FE73DC200899B4008B5000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3U8L694PX;
+				INFOPLIST_FILE = newBeautyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinfeng.newBeautyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/newBeauty.app/newBeauty";
+			};
+			name = Release;
+		};
+		45FE73DE200899B4008B5000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3U8L694PX;
+				INFOPLIST_FILE = newBeautyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinfeng.newBeautyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = newBeauty;
+			};
+			name = Debug;
+		};
+		45FE73DF200899B4008B5000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3U8L694PX;
+				INFOPLIST_FILE = newBeautyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinfeng.newBeautyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = newBeauty;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45FE73A6200899B3008B5000 /* Build configuration list for PBXProject "newBeauty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FE73D5200899B4008B5000 /* Debug */,
+				45FE73D6200899B4008B5000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FE73D7200899B4008B5000 /* Build configuration list for PBXNativeTarget "newBeauty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FE73D8200899B4008B5000 /* Debug */,
+				45FE73D9200899B4008B5000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FE73DA200899B4008B5000 /* Build configuration list for PBXNativeTarget "newBeautyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FE73DB200899B4008B5000 /* Debug */,
+				45FE73DC200899B4008B5000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FE73DD200899B4008B5000 /* Build configuration list for PBXNativeTarget "newBeautyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FE73DE200899B4008B5000 /* Debug */,
+				45FE73DF200899B4008B5000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45FE73A3200899B3008B5000 /* Project object */;
+}
