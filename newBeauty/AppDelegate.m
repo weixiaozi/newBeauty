@@ -23,7 +23,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [UMConfigure setLogEnabled:YES];
+    [UMConfigure setLogEnabled:NO];
     [UMConfigure initWithAppkey:@"5a66ab7ea40fa3294000003d" channel:@"App Store"];
     [MobClick setScenarioType:E_UM_NORMAL];
     
@@ -44,7 +44,7 @@
     [UMSocialGlobal shareInstance].isUsingHttpsWhenShareContent = NO;
     
     [[UMSocialManager defaultManager]setPlaform:UMSocialPlatformType_WechatFavorite appKey:@"wxf973a8d29798de66" appSecret:@"cecea9aa8de046213d4c1ed32fb82f4e" redirectURL:nil];
-    [[UMSocialManager defaultManager]setPlaform:UMSocialPlatformType_QQ appKey:@"1106685970" appSecret:nil   redirectURL:@"http://mobile.umeng.com/social"];
+    [[UMSocialManager defaultManager]setPlaform:UMSocialPlatformType_QQ appKey:@"1106621331" appSecret:nil   redirectURL:@"http://mobile.umeng.com/social"];
     [[UMSocialManager defaultManager]setPlaform:UMSocialPlatformType_Sina appKey:@"3729738588" appSecret:@"c58a55f14e9d40a369b75fd72c8b821f" redirectURL:@"https://api.weibo.com/oauth2/default.html"];
     [[UMSocialManager defaultManager] removePlatformProviderWithPlatformType:UMSocialPlatformType_WechatFavorite];
 
