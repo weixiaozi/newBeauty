@@ -263,16 +263,28 @@
     if (![tempDic isKindOfClass:[NSDictionary class]]) {
         return;
     }
-
-    UMSocialMessageObject *object=[UMSocialMessageObject messageObject];
+    
     NSString *title = [tempDic objectForKey:@"title"];
     NSString *desc = [tempDic objectForKey:@"desc"];
     NSString *pic = [tempDic objectForKey:@"pic"];
     NSString *target = [tempDic objectForKey:@"target"];
-
-    UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:title descr:desc thumImage:pic];
-    shareObject.webpageUrl=target;
-    object.shareObject=shareObject;
+    
+        
+    UMSocialMessageObject *object=[UMSocialMessageObject messageObject];
+    if (platform==UMSocialPlatformType_Sina) {
+        object.text = [NSString stringWithFormat:@"%@  %@", desc, target];
+        
+        UMShareImageObject *shareImageObject = [[UMShareImageObject alloc] init];
+        shareImageObject.shareImage = pic;
+        
+        object.shareObject = shareImageObject;
+        
+    }else{
+        UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:title descr:desc thumImage:pic];
+        shareObject.webpageUrl=target;
+        object.shareObject=shareObject;
+    }
+    
     
     [[UMSocialManager defaultManager]shareToPlatform:platform messageObject:object currentViewController:nil completion:^(id result, NSError *error) {
         if (error) {
