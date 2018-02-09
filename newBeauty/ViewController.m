@@ -234,10 +234,11 @@
     
     [[UMSocialManager defaultManager]shareToPlatform:platform messageObject:object currentViewController:nil completion:^(id result, NSError *error) {
         if (error) {
-            
+            NSLog(@"qqqq************Share fail with error %@*********",error);
         }else{
-            
+            NSLog(@"qqqqresponse data is %@",result);
         }
+
     }];
 }
 

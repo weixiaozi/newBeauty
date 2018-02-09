@@ -23,7 +23,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [UMConfigure setLogEnabled:NO];
+    [UMConfigure setLogEnabled:YES];
     [UMConfigure initWithAppkey:@"5a66ab7ea40fa3294000003d" channel:@"App Store"];
     [MobClick setScenarioType:E_UM_NORMAL];
     
