@@ -149,8 +149,15 @@
     webView.navigationDelegate=self;
     webView.UIDelegate=self;
     
+    NSString *encodedString = (NSString *)
+    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                              (CFStringRef)_contentUrl,
+                                                              (CFStringRef)@"!$&'()*+,-./:;=?@_~%#[]",
+                                                              NULL,
+                                                              kCFStringEncodingUTF8));
+    
     //2.创建URL
-    NSURL *URL = [NSURL URLWithString:_contentUrl];
+    NSURL *URL = [NSURL URLWithString:encodedString];
     
     
     //3.创建Request
